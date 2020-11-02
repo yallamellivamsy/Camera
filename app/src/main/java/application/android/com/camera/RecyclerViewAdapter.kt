@@ -66,7 +66,6 @@ class RecyclerViewAdapter(myContext: Context) : RecyclerView.Adapter<RecyclerVie
                 val intent = Intent(context, VideoPlayer::class.java).apply {
                     putExtra("path", videoPath);
                 }
-                //startActivity(intent)
                 context.startActivity(intent);
             }
         }else{
